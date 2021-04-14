@@ -1,0 +1,231 @@
+/*------- Font Family Starts -------*/
+
+@font-face { font-family: "Lavenda"; src: url("../fonts/Lavenda.ttf"); }
+@font-face { font-family: "Ubuntu-Light"; src: url("../fonts/Ubuntu-Light.ttf"); }
+@font-face { font-family: "Ubuntu-Medium"; src: url("../fonts/Ubuntu-Medium.ttf"); }
+@font-face { font-family: "Ovsyanka"; src: url("../fonts/Ovsyanka.ttf"); }
+
+/*------- Font Family Ends -------*/
+
+/*------- Reset CSS Starts -------*/
+
+html { letter-spacing: 1px; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+address { margin: 0; padding: 0; }
+li { list-style: none; }
+a,
+a:hover,
+a:focus { text-decoration: none; -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; }
+
+/*------- Reset CSS Ends -------*/
+
+/*------- Common CSS Starts -------*/
+
+.flex-align-center-desktop { -webkit-align-items: center; align-items: center; display: -webkit-box; display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: flex; }
+.section-heading > h3 { color: #000000; font: 4rem/1.1 "Lavenda"; margin-bottom: 30px; padding-bottom: 15px; position: relative; }
+.section-heading > h3 > span { background-color: #ff5240; bottom: 0; display: block; height: 1px; left: 50%; position: absolute; transform: translateX(-50%); -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); width: 100px; }
+.section-heading > h3 > span::before { background-color: #ff5240; border: 2px solid #ffffff; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; content: ""; display: block; height: 15px; left: 50%; position: absolute; top: 50%; transform: translate(-50%,-50%); -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); width: 15px; }
+.section-heading > h2 { color: #ff5240; font: 5rem/1.1 "Ovsyanka"; letter-spacing: 0; margin-bottom: 50px; text-transform: uppercase; }
+p { color: #000000; font: 1.8rem/1.7 "Ubuntu-Light"; }
+.section-heading > h2 > span { color: transparent; -webkit-text-stroke: 1px #007df7; -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; }
+.section-heading > h2 > span:hover { color: #007df7; }
+.btn:focus,
+.btn:active:focus { outline: 0; }
+.btn:active { -webkit-box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; -o-box-shadow: none; box-shadow: none; }
+
+/*------- Common CSS Ends -------*/
+
+/*------- Custom Scrollbar Section Starts -------*/
+
+::-webkit-scrollbar { width: 7px; }
+::-webkit-scrollbar-track { background-color: #006dd8; }
+::-webkit-scrollbar-thumb { background-color: #fff; }
+::-webkit-scrollbar-thumb:hover { background-color: #eeeeee; }
+
+@-moz-document url-prefix() {
+    html { overflow-y: scroll; scrollbar-color: #fff #006dd8; scrollbar-width: thin; }
+}
+
+/*------- Custom Scrollbar Section Ends -------*/
+
+/*------- Scroll To Top Section Starts -------*/
+
+.scroll-to-top > a { background-color: #006dd8; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; bottom: 60px; opacity: 0; height: 50px; position: fixed; right: 30px; width: 50px; }
+.scroll-to-top > a > i { color: #ffffff; display: block; font-size: 1.8rem; line-height: 50px; text-align: center; }
+.scroll-to-top.active > a { bottom: 30px; opacity: 1; }
+
+/*------- Scroll To Top Section Ends -------*/
+
+/*------- Home Page Starts -------*/
+
+	/*------- Mobile Logo and Burger Menu Section Starts -------*/
+
+.bg-logo-burger-menu-mobile,
+.fixed-navbar-menu-mobile { display: none; }
+
+	/*------- Mobile Logo and Burger Menu Section Ends -------*/
+
+	/*------- Desktop Logo and Navbar Menu Section Starts -------*/
+
+.bg-logo-navbar-menu-desktop { background-color: #ffffff; display: block; left: 0; padding: 15px; position: fixed; top: 0; -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; width: 100%; z-index: 10; }
+.bg-logo-navbar-menu-desktop.active { background-color: #f7f7f7; }
+.header-logo-desktop > a { display: inline-block; }
+.header-logo-desktop > a > p { color: #ff5240; font-family: "Ubuntu-Medium"; text-transform: uppercase; }
+.header-logo-desktop > a > p > span { color: #007df7; }
+.menu-listing-desktop { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; justify-content: flex-end; }
+.menu-listing-desktop > li { display: inline-block; margin-right: 30px; }
+.menu-listing-desktop > li:last-child { margin-right: 0; }
+.menu-listing-desktop > li > a { color: #000000; font: 1.8rem/1.5 "Ubuntu-Light"; }
+.menu-listing-desktop > li.active > a,
+.menu-listing-desktop > li > a:hover { color: #ff5240; }
+.veg-non-veg-listing { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; justify-content: flex-end; }
+.veg-non-veg-listing > li { display: inline-block; margin-right: 10px; }
+.veg-non-veg-listing > li:last-child { margin-right: 0; }
+.veg-non-veg-listing > li > img { width: 25px; }
+
+	/*------- Desktop Logo and Navbar Menu Section Ends -------*/
+
+	/*------- Slider Section Starts -------*/
+
+.bg-slider-home { height: 100vh; padding: 0; }
+.slider-img-home { clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%); height: 100vh; position: relative; }
+.slider-img-home::after { background-color: #000000a7; content: ""; height: 100%; left: 0; position: absolute; top: 0; width: 100%; z-index: 1; }
+.slider-img-1-home { background: url("../images/slider-home-1.jpg") no-repeat top/cover; }
+.slider-img-2-home { background: url("../images/slider-home-2.jpg") no-repeat top/cover; }
+.slider-img-3-home { background: url("../images/slider-home-3.jpg") no-repeat top/cover; }
+.slider-info-home { left: 50%; position: absolute; top: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); width: 100%; z-index: 2; }
+.slider-info-home > h2 { color: #ff5240; font: 6rem/1.2 "Ubuntu-Medium"; margin-bottom: 30px; padding-bottom: 15px; position: relative; text-align: center; }
+.slider-info-home > h2::after { background-color: #ffffff; bottom: 0; content: ""; height: 1px; left: 50%; position: absolute; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); width: 170px; }
+.slider-info-home > h2 > span { color: transparent; -webkit-text-stroke: 1px #71b9ff; }
+.slider-info-home > p { color: #ffffff; font: 3rem/1.2 "Lavenda"; margin: 0 auto; text-align: center; width: 700px; }
+
+		/*------- Slick Slider Dots CSS Starts -------*/
+
+.banner-slick-slider-home .slick-dots { bottom: 30px; }
+.banner-slick-slider-home .slick-dots li { cursor: pointer; display: inline-block; height: auto; margin: 0 5px; padding: 0; position: relative; width: auto; }
+.banner-slick-slider-home .slick-dots li button { background-color: #71b9ff; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; height: 12px; line-height: 12px; margin: 0; opacity: 0.5; -webkit-transition: all 0.5s linear; -moz-transition: all 0.5s linear; -ms-transition: all 0.5s linear; -o-transition: all 0.5s linear; transition: all 0.5s linear; width: 12px; }
+.banner-slick-slider-home .slick-dots li.slick-active button { -webkit-border-radius: 27px; -moz-border-radius: 27px; -ms-border-radius: 27px; -o-border-radius: 27px; border-radius: 27px; opacity: 1; width: 27px; }
+.banner-slick-slider-home .slick-dots li button::before { content: ""; }
+
+		/*------- Slick Slider Dots CSS Ends -------*/
+
+	/*------- Slider Section Ends -------*/
+
+	/*------- About Us Section Starts -------*/
+
+.bg-about-home { padding: 100px 15px; }
+.about-img-home { position: relative; }
+.about-img-home::after { border: 1px solid #ff5240; content: ""; height: 100%; left: 15px; position: absolute; top: 15px; width: 100%; z-index: -1; }
+.about-img-home > img { width: 100%; }
+.about-info-home > p { padding: 0 15px; }
+
+	/*------- About Us Section Ends -------*/
+
+	/*------- Our Services Section Starts -------*/
+
+.bg-our-services-home { background-color: #f7f7f7; padding: 100px 15px 70px; }
+.box-services-home { margin-bottom: 30px; }
+.box-services-circle-icon { background-color: #ffffff; -webkit-border-radius: 140px/280px; -moz-border-radius: 140px/280px; -ms-border-radius: 140px/280px; -o-border-radius: 140px/280px; border-radius: 140px/280px; -webkit-box-shadow: inset 0 -4px 0 0 #ff5240; -moz-box-shadow: inset 0 -4px 0 0 #ff5240; -ms-box-shadow: inset 0 -4px 0 0 #ff5240; -o-box-shadow: inset 0 -4px 0 0 #ff5240; box-shadow: inset 0 -4px 0 0 #ff5240; height: 150px; margin: 0 auto 30px; position: relative; -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; width: 150px; }
+.box-services-circle-icon:hover { box-shadow: inset 0 4px 0 0 #ff5240; }
+.box-services-circle-icon > img { left: 50%; position: absolute; top: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); width: 75px; }
+.box-services-home > p { text-align: center; }
+
+	/*------- Our Services Section Ends -------*/
+
+	/*------- Gallery Section Starts -------*/
+
+.bg-gallery-home { padding: 100px 15px 70px; }
+.img-gallery-overlay-home { border-radius: 14px; margin-bottom: 30px; -webkit-border-radius: 14px; -moz-border-radius: 14px; -ms-border-radius: 14px; -o-border-radius: 14px; -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; }
+.img-gallery-overlay-home:hover { filter: brightness(50%); -webkit-filter: brightness(50%); }
+.fancybox-image { border-radius: 14px; margin-bottom: 30px; -webkit-border-radius: 14px; -moz-border-radius: 14px; -ms-border-radius: 14px; -o-border-radius: 14px; }
+
+	/*------- Gallery Section Ends -------*/
+
+	/*------- Testimonials Slider Section Starts -------*/
+
+.bg-testimonials-home { padding: 100px 15px; position: relative; }
+.bg-testimonials-home::after { background-color: #007df7; content: ""; height: 100%; position: absolute; right: 0; top: 0; width: 50%; z-index: -1; }
+.testimonials-section-heading > h2 > span { display: block; }
+.box-testimonials-home { background-color: #ffffff; -webkit-box-shadow: 0px 10px 13px -7px #00000047, 5px 5px 15px 5px rgba(0,0,0,0); -moz-box-shadow: 0px 10px 13px -7px #00000047, 5px 5px 15px 5px rgba(0,0,0,0); -ms-box-shadow: 0px 10px 13px -7px #00000047, 5px 5px 15px 5px rgba(0,0,0,0); -o-box-shadow: 0px 10px 13px -7px #00000047, 5px 5px 15px 5px rgba(0,0,0,0); box-shadow: 0px 10px 13px -7px #00000047, 5px 5px 15px 5px rgba(0,0,0,0); margin-bottom: 30px; padding: 30px; position: relative; z-index: 1; }
+.testimonials-info-home > p { margin-bottom: 30px; }
+.testimonials-info-home > h3 { color: #007df7; font: 2.4rem/1.2 "Ubuntu-Medium"; margin-bottom: 5px; }
+.testimonials-info-home > h4 { color: #000000; font: 1.8rem/1.2 "Ubuntu-Light"; }
+.testimonials-quote-img { bottom: 15px; position: absolute; right: 15px; z-index: -1; }
+.testimonials-quote-img > img { opacity: 0.1; width: 100px; }
+.testimonials-img-home > img { border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; }
+.testimonials-slick-slider-home .slick-slide { padding: 15px; }
+
+		/*------- Slick Slider Dots CSS Starts -------*/
+
+.testimonials-slick-slider-home .slick-dots { bottom: -80px; }
+.testimonials-slick-slider-home .slick-dots li { cursor: pointer; display: inline-block; height: auto; margin: 0 5px; padding: 0; position: relative; width: auto; }
+.testimonials-slick-slider-home .slick-dots li button { background-color: #71b9ff; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; height: 12px; line-height: 12px; margin: 0; opacity: 0.5; -webkit-transition: all 0.5s linear; -moz-transition: all 0.5s linear; -ms-transition: all 0.5s linear; -o-transition: all 0.5s linear; transition: all 0.5s linear; width: 12px; }
+.testimonials-slick-slider-home .slick-dots li.slick-active button { -webkit-border-radius: 27px; -moz-border-radius: 27px; -ms-border-radius: 27px; -o-border-radius: 27px; border-radius: 27px; opacity: 1; width: 27px; }
+.testimonials-slick-slider-home .slick-dots li button::before { content: ""; }
+
+		/*------- Slick Slider Dots CSS Ends -------*/
+
+	/*------- Testimonials Slider Section Ends -------*/
+
+	/*------- Contact Section Starts -------*/
+
+.bg-contact-home { padding: 100px 15px; }
+.form-group-contact-home { margin-bottom: 30px; }
+.form-control-contact { border: 1px solid #000000; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; -webkit-box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; -o-box-shadow: none; box-shadow: none; color: #000000; font-family: "Ubuntu-Light"; font-size: 1.6rem; height: 40px; }
+.form-control-contact::placeholder { color:#000000; opacity:1; }
+.form-control-contact:-ms-input-placeholder { color:#000000; }
+.form-control-contact::-ms-input-placeholder { color:#000000; }
+.form-control-contact:focus { -webkit-box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; -o-box-shadow: none; box-shadow: none; }
+.btn-submit { background-color: #ff5240; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; color: #ffffff; display: block; font-family: "Ubuntu-Light"; font-size: 1.6rem; letter-spacing: 1px; text-transform: uppercase; -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; width: 100%; }
+.btn-submit:hover { background-color: #000000; color: #ffffff; }
+.btn-submit:focus { background-color: #ff5240; color: #ffffff; }
+.display-map { border: 0; height: 450px; width: 100%; }
+
+	/*------- Contact Section Ends -------*/
+
+	/*------- Footer Section Starts -------*/
+
+.bg-footer-home { background-color: #007df7; padding: 50px 15px; }
+.footer-logo-desc > a { display: inline-block; }
+.footer-logo-desc > a > h3 { color: #ffffff; font: 2.4rem/1.1 "Ubuntu-Medium"; margin-bottom: 30px; text-transform: uppercase; }
+.footer-logo-desc > a > img { display: inline-block; margin-bottom: 30px; width: 150px; }
+.footer-logo-desc > p { color: #ffffff; padding-right: 30px; }
+.footer-heading > h3 { color: #ffffff; font: 2.4rem/1.42857143 "Ubuntu-Medium"; margin-bottom: 30px; text-transform: uppercase; }
+.footer-listing > li { display: block; margin-bottom: 10px; }
+.footer-listing > li:last-child { margin-bottom: 0; }
+.footer-listing > li > a { color: #ffffff; font: 1.8rem/1.42857143 "Ubuntu-Light"; }
+.footer-listing > li > a:hover { color: #000000; }
+.footer-contact-listing > li { display: block; margin-bottom: 15px; padding-left: 35px; position: relative; }
+.footer-contact-listing > li:first-child::before,
+.footer-contact-listing > li:nth-child(2)::before,
+.footer-contact-listing > li:nth-child(3)::before { color: #ffffff; content: "\f3c5"; display: block; font-family: "Font Awesome 5 Free"; font-size: 2rem; font-weight: 900; left: 0; position: absolute; top: 0; }
+.footer-contact-listing > li:nth-child(2)::before { content: "\f0e0"; }
+.footer-contact-listing > li:nth-child(3)::before { content: "\f879"; }
+.footer-contact-listing > li:last-child { margin-bottom: 0; }
+.footer-contact-listing > li > p,
+.footer-contact-listing > li > a { color: #ffffff; font: 1.8rem/1.42857143 "Ubuntu-Light"; }
+.footer-contact-listing > li > a:hover { color: #000000; }
+.footer-social-listing > li { display: inline-block; margin-right: 15px; }
+.footer-social-listing > li:last-child { margin-right: 0; }
+.footer-social-listing > li > a { color: #ffffff; font-size: 2.4rem; }
+.footer-social-listing > li > a:hover { color: #000000; }
+
+	/*------- Footer Section Ends -------*/
+
+	/*------- Copyright Section Starts -------*/
+
+.bg-copyright-home { background-color: #006dd8; padding: 30px 15px; }
+.copyright-info > p,
+.copyright-info > p > a { color: #fff; }
+.copyright-info > p > span { color: #000000; }
+
+	/*------- Copyright Section Ends -------*/
+
+/*------- Home Page Ends -------*/

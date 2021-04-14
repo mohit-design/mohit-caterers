@@ -1,0 +1,298 @@
+@media only screen and (max-width: 767px) {
+
+/*------- Home Page Starts -------*/
+
+  /*------- Common CSS Starts -------*/
+
+body.active { overflow: hidden; }
+.display-block-mobile { display: block; }
+.container-fluid { padding: 15px; }
+.section-heading > h3 { font-size: 2.4rem; margin-bottom: 15px; }
+.section-heading > h2 { font-size: 3rem; line-height: 1.2; margin-bottom: 15px; }
+.section-heading > h2 > span { display: block; }
+p { font-size: 1.6rem; text-align: justify; }
+
+  /*------- Common CSS Ends -------*/
+
+  /*------- Desktop Logo and Navbar Menu Section Starts -------*/
+  
+.bg-logo-navbar-menu-desktop { display: none; }
+
+  /*------- Desktop Logo and Navbar Menu Section Ends -------*/
+
+  /*------- Mobile Logo and Burger Menu Section Starts -------*/
+
+.bg-logo-burger-menu-mobile { background-color: #ffffff; display: block; left: 0; padding: 5px 15px; position: fixed; top: 0; width: 100%; z-index: 10; }
+.header-logo-mobile > a { display: inline-block; }
+.header-logo-mobile > a > p { color: #ff5240; font-family: "Ubuntu-Medium"; text-transform: uppercase; }
+.header-logo-mobile > a > p > span { color: #007df7; }
+
+    /*------- Mobile Hamburger Menu Section Starts -------*/
+
+.burger-menu { background-color: transparent; cursor: pointer; height: 50px; position: relative; width: 50px; }
+.burger-menu span { background-color: #000000; height: 2px; left: 50%; position: absolute; top: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); -webkit-transition: 0.5s linear 0.5s; -moz-transition: 0.5s linear 0.5s; -ms-transition: 0.5s linear 0.5s; -o-transition: 0.5s linear 0.5s; transition: 0.5s linear 0.5s; width: 25px; }
+.burger-menu span::before,
+.burger-menu span::after { background-color: #000000; content: ""; height: 2px; position: absolute; top: 10px; -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; width: 25px; }
+.burger-menu span::before { top: -10px; }
+.burger-menu.active span { background-color: transparent; -webkit-transition: 0s linear; -moz-transition: 0s linear; -ms-transition: 0s linear; -o-transition: 0s linear; transition: 0s linear; }
+.burger-menu.active span::before { top: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
+.burger-menu.active span::after { top: 0; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); }
+
+	  /*------- Mobile Hamburger Menu Section Ends -------*/
+
+  /*------- Mobile Logo and Burger Menu Section Ends -------*/
+
+  /*------- Mobile Navbar Menu Section Starts -------*/
+
+.fixed-navbar-menu-mobile { background-color: #fff; bottom: 0; display: block; clip-path: circle(100px at 90% -15%); height: 100%; left: 0; position: fixed; right: 0; top: 0; -webkit-transition: 1s ease; -moz-transition: 1s ease; -ms-transition: 1s ease; -o-transition: 1s ease; transition: 1s ease; width: 100%; z-index: 9; }
+.fixed-navbar-menu-mobile.active { clip-path: circle(1000px at 90% -10%); }
+.menu-listing-mobile { left: 50%; opacity: 0; position: absolute; top: 40%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); -webkit-transition: 1s ease; -moz-transition: 1s ease; -ms-transition: 1s ease; -o-transition: 1s ease; transition: 1s ease; visibility: hidden; width: 100%; z-index: 10; }
+.menu-listing-mobile.active { opacity: 1; top: 50%; -webkit-transition: 1s ease 0.25s; -moz-transition: 1s ease 0.25s; -ms-transition: 1s ease 0.25s; -o-transition: 1s ease 0.25s; transition: 1s ease 0.25s; visibility: visible; }
+.menu-listing-mobile > li { display: block; margin-bottom: 30px; }
+.menu-listing-mobile > li:last-child { margin-bottom: 0; }
+.menu-listing-mobile > li > a { color: #000; display: block; font: 2.4rem/1 "Ubuntu-Light"; text-align: center; }
+.menu-listing-mobile > li.active > a,
+.menu-listing-mobile > li > a:hover { color: #ff5240; }
+.veg-non-veg-listing-mobile { bottom: 60px; left: 50%; position: absolute; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); -webkit-transition: 1s ease; -moz-transition: 1s ease; -ms-transition: 1s ease; -o-transition: 1s ease; transition: 1s ease; visibility: hidden; }
+.veg-non-veg-listing-mobile.active { bottom: 30px; opacity: 1; -webkit-transition: 1s ease 0.25s; -moz-transition: 1s ease 0.25s; -ms-transition: 1s ease 0.25s; -o-transition: 1s ease 0.25s; transition: 1s ease 0.25s; visibility: visible; }
+.veg-non-veg-listing-mobile > li { display: inline-block; margin-right: 10px; }
+.veg-non-veg-listing-mobile > li:last-child { margin-right: 0; }
+.veg-non-veg-listing-mobile > li > img { width: 25px; }
+
+  /*------- Mobile Navbar Menu Section Ends -------*/
+
+  /*------- Slider Section Starts -------*/
+
+.bg-slider-home { padding: 0; }
+.slider-img-home { clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%); }
+.slider-info-home { padding: 15px; }
+.slider-info-home > h2 { font-size: 4rem; margin-bottom: 15px; }
+.slider-info-home > h2 > span { display: block; }
+.slider-info-home > p { font-size: 1.8rem; width: 100%; }
+
+  /*------- Slider Section Ends -------*/
+
+  /*------- About Us Section Starts -------*/
+
+.about-img-home::after { left: 10px; top: 10px; }
+.about-img-home > img { margin-bottom: 25px; }
+.about-info-home > p { padding: 0; }
+
+  /*------- About Us Section Ends -------*/
+
+  /*------- Our Services Section Starts -------*/
+
+.bg-our-services-home { padding: 15px 15px 0; }
+.box-services-home,
+.box-services-circle-icon { margin-bottom: 15px; }
+.box-services-circle-icon { height: 130px; width: 130px; }
+.box-services-circle-icon > img { width: 65px; }
+
+  /*------- Our Services Section Ends -------*/
+
+  /*------- Gallery Section Starts -------*/
+
+.bg-gallery-home { padding: 15px 15px 0; }
+.img-gallery-overlay-home { margin-bottom: 15px; }
+
+  /*------- Gallery Section Ends -------*/
+
+  /*------- Testimonials Slider Section Starts -------*/
+
+.bg-testimonials-home::after { background-color: #f7f7f7; }
+.testimonials-section-heading > h2 { line-height: 1.2; }
+.testimonials-info-home > p { margin-bottom: 15px; }
+.testimonials-info-home > h3 { font-size: 2rem; }
+.testimonials-quote-img > img { width: 50px; }
+.testimonials-slick-slider-home .slick-dots { bottom: -25px; }
+
+  /*------- Testimonials Slider Section Ends -------*/
+
+  /*------- Contact Section Starts -------*/
+
+.form-group-contact-home { margin-bottom: 15px; }
+
+  /*------- Contact Section Ends -------*/
+
+  /*------- Footer Section Starts -------*/
+
+.footer-logo-desc > a > h3,
+.footer-heading > h3,
+.footer-listing > li:last-child,
+.footer-contact-listing > li:last-child { margin-bottom: 15px; }
+.footer-logo-desc > p { margin-bottom: 15px; padding-right: 0; }
+.footer-contact-listing > li > p,
+.footer-contact-listing > li > a { font-size: 1.6rem; }
+.footer-social-listing > li > a { font-size: 2rem; }
+
+  /*------- Footer Section Ends -------*/
+
+  /*------- Copyright Section Starts -------*/
+
+  .copyright-info > p { font-size: 1.4rem; text-align: center; }
+
+  /*------- Copyright Section Ends -------*/
+
+/*------- Home Page Ends -------*/
+
+}
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+
+/*------- Home Page Starts -------*/
+
+  /*------- Mobile Navbar Menu Section Starts -------*/
+
+.menu-listing-mobile { text-align: center; }
+.menu-listing-mobile > li { display: inline-block; margin: 0 10px 0 0; }
+.menu-listing-mobile > li:last-child { margin: 0; }
+.menu-listing-mobile > li > a { font-size: 1.6rem; }
+
+  /*------- Mobile Navbar Menu Section Ends -------*/
+
+  /*------- Gallery Section Starts -------*/
+
+.img-gallery-overlay-home { margin: 0 auto 15px; }
+
+  /*------- Gallery Section Ends -------*/
+
+/*------- Home Page Ends -------*/
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+/*------- Home Page Starts -------*/
+
+  /*------- Common CSS Starts -------*/
+
+.display-block-tab { display: block; }
+.container-fluid { padding: 30px 15px; }
+.section-heading > h3 { font-size: 2.4rem; margin-bottom: 30px; }
+.section-heading > h2 { font-size: 3rem; margin-bottom: 30px; }
+p { text-align: justify; }
+  
+  /*------- Common CSS Ends -------*/
+
+  /*------- Desktop Logo and Navbar Menu Section Starts -------*/
+
+.bg-logo-navbar-menu-desktop { padding: 15px; }
+.header-logo-desktop > a > p { font-size: 1.6rem; }
+.menu-listing-desktop > li { margin-right: 15px; }
+.menu-listing-desktop > li > a { font-size: 1.6rem; }
+.veg-non-veg-listing { display: none; }
+
+  /*------- Desktop Logo and Navbar Menu Section Ends -------*/
+
+  /*------- Slider Section Starts -------*/
+
+.bg-slider-home { height: 70vh; padding: 0; }
+.slider-img-home { height: 70vh; }
+.slider-info-home > h2 { font-size: 4rem; }
+.slider-info-home > p { font-size: 2.4rem; }
+
+  /*------- Slider Section Ends -------*/
+
+  /*------- About Us Section Starts -------*/
+
+.about-img-home > img { margin-bottom: 45px; }
+.about-info-home > p { padding: 0; }
+
+  /*------- About Us Section Ends -------*/
+
+  /*------- Gallery Section Starts -------*/
+
+.bg-gallery-home { padding: 30px 30px 0; }
+
+  /*------- Gallery Section Ends -------*/
+
+  /*------- Testimonials Slider Section Starts -------*/
+
+.testimonials-section-heading > h2 { line-height: 1.2; }
+.testimonials-slick-slider-home .slick-dots { bottom: -25px; }
+.testimonials-quote-img > img { width: 70px; }
+
+  /*------- Testimonials Slider Section Ends -------*/
+
+  /*------- Footer Section Starts -------*/
+
+.footer-logo-desc > p,
+.footer-listing > li:last-child { margin-bottom: 30px; padding-right: 0; }
+
+  /*------- Footer Section Ends -------*/
+
+  /*------- Copyright Section Starts -------*/
+
+.bg-copyright-home { padding: 15px; }
+.copyright-info > p { font-size: 1.6rem; text-align: center; }
+
+  /*------- Copyright Section Ends -------*/
+
+/*------- Home Page Ends -------*/
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+/*------- Home Page Starts -------*/
+
+  /*------- Common CSS Starts -------*/
+
+.container-fluid { padding: 50px 15px; }
+.section-heading > h3 { font-size: 2.4rem; margin-bottom: 30px; }
+.section-heading > h2 { font-size: 3rem; margin-bottom: 30px; }
+p { text-align: justify; }
+  
+  /*------- Common CSS Ends -------*/
+
+  /*------- Desktop Logo and Navbar Menu Section Starts -------*/
+
+.bg-logo-navbar-menu-desktop { padding: 30px 15px; }
+
+  /*------- Desktop Logo and Navbar Menu Section Ends -------*/
+
+  /*------- Slider Section Starts -------*/
+
+.bg-slider-home { padding: 0; }
+.slider-info-home > h2 { font-size: 5rem; }
+.slider-info-home > p { font-size: 2.7rem; }
+
+  /*------- Slider Section Ends -------*/
+
+  /*------- About Us Section Starts -------*/
+
+.about-info-home > p { padding: 0; }
+
+  /*------- About Us Section Ends -------*/
+
+  /*------- Gallery Section Starts -------*/
+
+.bg-gallery-home { padding: 30px 30px 0; }
+
+  /*------- Gallery Section Ends -------*/
+
+  /*------- Testimonials Slider Section Starts -------*/
+
+.testimonials-section-heading > h2 { line-height: 1.2; }
+.testimonials-slick-slider-home .slick-dots { bottom: -40px; }
+.testimonials-quote-img > img { width: 50px; }
+
+  /*------- Testimonials Slider Section Ends -------*/
+
+  /*------- Footer Section Starts -------*/
+
+.footer-logo-desc > p,
+.footer-listing > li:last-child { margin-bottom: 30px; padding-right: 0; }
+
+  /*------- Footer Section Ends -------*/
+
+  /*------- Copyright Section Starts -------*/
+
+.bg-copyright-home { padding: 30px 15px; }
+.copyright-info > p { text-align: center; }
+
+  /*------- Copyright Section Ends -------*/
+
+/*------- Home Page Ends -------*/
+
+}
