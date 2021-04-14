@@ -47,6 +47,7 @@ $(function() {
     $(".burger-menu").removeClass("active");
     $(".fixed-navbar-menu-mobile").removeClass("active");
 		$(".menu-listing-mobile").removeClass("active");
+    $(".veg-non-veg-listing-mobile").toggleClass("active");
 		$("body").removeClass("active");
   });
   // Scroll To Top JS
