@@ -74,7 +74,7 @@ p { font-size: 1.6rem; text-align: justify; }
 
   /*------- About Us Section Starts -------*/
 
-.about-img-home::after { left: 10px; top: 10px; }
+.about-img-home::after { left: 7px; top: 7px; }
 .about-img-home > img { margin-bottom: 25px; }
 .about-info-home > p { padding: 0; }
 
