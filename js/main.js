@@ -63,10 +63,6 @@ $(function() {
   $(".scroll-to-top").click(function(event) {
     event.preventDefault();
     $('html,body').animate({scrollTop: 0},4000);
-    if($(".menu-listing > li > a").parent().hasClass("active")) {
-      $(".menu-listing > li > a").parent().removeClass("active");
-      $(".menu-listing > li:nth-child(1) > a").parent().addClass("active");
-    }
   });
   // Banner Slick Slider JS
   $(".banner-slick-slider-home").slick({

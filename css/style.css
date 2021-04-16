@@ -79,7 +79,7 @@ p { color: #000000; font: 1.8rem/1.7 "Ubuntu-Light"; }
 .header-logo-desktop > a { display: inline-block; }
 .header-logo-desktop > a > p { color: #ff5240; font-family: "Ubuntu-Medium"; text-transform: uppercase; }
 .header-logo-desktop > a > p > span { color: #007df7; }
-.menu-listing-desktop { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; justify-content: flex-end; }
+.menu-listing-desktop { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; justify-content: center; }
 .menu-listing-desktop > li { display: inline-block; margin-right: 30px; }
 .menu-listing-desktop > li:last-child { margin-right: 0; }
 .menu-listing-desktop > li > a { color: #000000; font: 1.8rem/1.5 "Ubuntu-Light"; }
